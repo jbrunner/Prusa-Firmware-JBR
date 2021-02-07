@@ -26,7 +26,7 @@
 
 Only initial:
 
-    cp Firmware/variants/Bondtech-MK3S-16-EINSy10a-E3Dv6full.h Configuration_prusa.h
+    cp Firmware/variants/Bondtech-MK3S-16-EINSy10a-E3Dv6full.h Firmware/Configuration_prusa.h
 
 Modifications are made to: Configuration_prusa.h
 

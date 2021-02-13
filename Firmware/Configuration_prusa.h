@@ -46,7 +46,7 @@
 
 // Steps per unit {X,Y,Z,E}
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {100,100,3200/8,140}
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {100,100,3200/8,415}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,3200/8,415}
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {100,100,3200/8,560}
 
 // Endstop inverting
@@ -68,9 +68,11 @@
 #define MANUAL_Z_HOME_POS 0.2
 
 // Travel limits after homing
-#define X_MAX_POS 255
+#define X_MAX_POS 249.25 // Kabelbaum schlägt an rahmen an. Deshalb  stimmt grösse nicht ganz
 #define X_MIN_POS 0
-#define Y_MAX_POS 212.5
+// NOTE: Y_MAX_POS needs to be -8 because of hardcoded +8 in 54ef2936c
+// SEE: https://github.com/prusa3d/Prusa-Firmware/commit/54ef2936c
+#define Y_MAX_POS 215.46-8 // 215.462, 215.463, 215.462
 #define Y_MIN_POS -4 //orig -4
 #define Z_MAX_POS 210
 #define Z_MIN_POS 0.15

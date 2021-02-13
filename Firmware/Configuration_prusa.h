@@ -19,7 +19,7 @@
 #define DEVELOPER
 
 // Printer name
-#define CUSTOM_MENDEL_NAME "Bondtech MK3S"
+#define CUSTOM_MENDEL_NAME "FW 3.9.3-1"
 
 // Electronics
 #define MOTHERBOARD BOARD_EINSY_1_0a
